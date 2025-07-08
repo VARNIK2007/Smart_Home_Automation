@@ -64,3 +64,34 @@ body {
   object-fit: cover;
 }
 
+.component-img {
+  display: block;
+  width: 180px;
+  height: auto;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #444;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .about-section h1 {
+    font-size: 2rem;
+  }
+
+  .category h2 {
+    font-size: 1.5rem;
+  }
+
+  .item h3 {
+    font-size: 1.2rem;
+  }
+
+  .component-img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+
