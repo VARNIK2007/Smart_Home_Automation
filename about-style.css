@@ -1,9 +1,11 @@
+/* Reset default margins and paddings */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* General body styling */
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #121212;
@@ -12,11 +14,13 @@ body {
   padding: 20px;
 }
 
+/* Main container for all sections */
 .about-section {
   max-width: 1000px;
   margin: auto;
 }
 
+/* Title styling */
 .about-section h1 {
   text-align: center;
   margin-bottom: 30px;
@@ -24,6 +28,7 @@ body {
   font-size: 2.5rem;
 }
 
+/* Category section header */
 .category {
   margin-bottom: 40px;
 }
@@ -32,8 +37,10 @@ body {
   color: #00f7ff;
   margin-bottom: 20px;
   font-size: 1.8rem;
+  text-align: left;
 }
 
+/* Individual content block */
 .item {
   margin-bottom: 30px;
   padding: 20px;
@@ -42,21 +49,26 @@ body {
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
+/* Subheadings inside .item blocks */
 .item h3 {
   color: #66ccff;
   margin-bottom: 10px;
   font-size: 1.4rem;
 }
 
+/* Paragraph text inside .item */
 .item p {
   color: #ccc;
   font-size: 1rem;
   margin-bottom: 15px;
+  text-align: left;
 }
 
-.about-img {
-  width: 100%;
-  max-width: 400px;
+/* Images (optional use) */
+.about-img,
+.component-img {
+  display: block;
+  max-width: 100%;
   margin: 15px 0;
   border-radius: 10px;
   border: 1px solid #444;
@@ -64,17 +76,13 @@ body {
   object-fit: cover;
 }
 
+/* Smaller images for components */
 .component-img {
-  display: block;
   width: 180px;
   height: auto;
-  margin: 10px 0;
-  border-radius: 8px;
-  border: 1px solid #444;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Responsive design */
+/* Responsive styles */
 @media (max-width: 600px) {
   .about-section h1 {
     font-size: 2rem;
@@ -93,5 +101,6 @@ body {
     max-width: 300px;
   }
 }
+
 
 
