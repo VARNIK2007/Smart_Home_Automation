@@ -1,3 +1,4 @@
+/* Reset and font */
 * {
   margin: 0;
   padding: 0;
@@ -57,7 +58,8 @@ header p {
   font-size: 1.5rem;
 }
 
-.card p, .card li {
+.card p,
+.card li {
   color: #ccc;
   font-size: 1rem;
 }
@@ -109,4 +111,5 @@ footer a:hover {
     max-height: 200px;
   }
 }
+
 
