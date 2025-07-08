@@ -10,28 +10,42 @@
 <body>
   <header>
     <div class="container">
-      <h1>🏠 Smart Home Automation</h1>
-      <p>Control & Monitor Devices with ESP8266 + Web</p>
+      <h1>🏡 Smart Home Automation</h1>
+      <p>ESP8266 | Sensors | Blynk App | Real-Time Monitoring</p>
     </div>
   </header>
 
   <main class="container">
     <section class="card">
-      <h2>💡 Control Panel</h2>
-      <button class="device-btn" id="light-toggle">Toggle Light</button>
-      <button class="device-btn" id="fan-toggle">Toggle Fan</button>
+      <h2>📘 Project Overview</h2>
+      <img src="https://i.imgur.com/0Nhmr2v.png" alt="Smart Home Overview" class="card-img">
+      <p>This smart home system automates lights, geysers, and gas valves using NodeMCU ESP8266. Users can control devices via Blynk and monitor temperature/gas levels in real time.</p>
     </section>
 
     <section class="card">
-      <h2>🌡 Sensor Data</h2>
-      <p>Temperature: <span id="temp-value">-- °C</span></p>
-      <p>Humidity: <span id="humidity-value">-- %</span></p>
+      <h2>🔧 Components Used</h2>
+      <img src="https://i.imgur.com/YY5Qdtz.png" alt="Components" class="card-img">
+      <ul>
+        <li>ESP8266 (NodeMCU)</li>
+        <li>3-Channel Relay Module</li>
+        <li>DS18B20 Temperature Sensor</li>
+        <li>MQ2 Gas Sensor</li>
+        <li>Servo Motor (gas valve)</li>
+        <li>Push Buttons</li>
+        <li>Blynk App</li>
+      </ul>
     </section>
 
     <section class="card">
-      <h2>📡 System Info</h2>
-      <p>Status: <span id="system-status">Online</span></p>
-      <p>Connected Device: ESP8266</p>
+      <h2>⚙️ How It Works</h2>
+      <img src="https://i.imgur.com/eyG2NVR.png" alt="Working Diagram" class="card-img">
+      <p>The ESP8266 reads gas and temperature sensors. It sends data to Blynk and reacts based on thresholds. For safety, it shuts off the geyser at 50°C and opens the gas valve using a servo if gas is detected.</p>
+    </section>
+
+    <section class="card">
+      <h2>📈 Market Scope</h2>
+      <img src="https://i.imgur.com/KlpafLy.png" alt="Market Graph" class="card-img">
+      <p>Smart home demand is booming! The global market is expected to cross $150B by 2027. This DIY system shows how cost-effective tech can power next-gen homes.</p>
     </section>
   </main>
 
@@ -40,11 +54,6 @@
       <a href="https://github.com/VARNIK2007" target="_blank">GitHub</a>
     </p>
   </footer>
-
-  <!-- JS for button actions -->
-  <script>
-    document.getElementById('light-toggle').onclick = () => alert("Light toggled!");
-    document.getElementById('fan-toggle').onclick = () => alert("Fan toggled!");
-  </script>
 </body>
 </html>
+
