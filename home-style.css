@@ -1,20 +1,83 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  line-height: 1.8;
+  padding: 30px;
+}
+
+/* Container */
+.main-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Main Title */
+.title {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #00f7ff;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+/* Section Box */
 .intro-box {
   background-color: #1e1e1e;
-  padding: 25px;
-  border-radius: 10px;
-  margin: 30px auto;
-  max-width: 800px;
-  box-shadow: 0 0 10px rgba(0, 247, 255, 0.1);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 247, 255, 0.1);
 }
 
+/* Section Headings */
 .intro-box h2 {
   color: #00f7ff;
-  margin-bottom: 10px;
+  margin-top: 25px;
+  font-size: 1.6rem;
+  border-left: 4px solid #00f7ff;
+  padding-left: 10px;
 }
 
+/* Paragraphs */
 .intro-box p {
+  margin: 15px 0;
+  font-size: 1.05rem;
   color: #ccc;
-  font-size: 1rem;
-  margin-bottom: 20px;
 }
+
+/* Ordered List */
+.intro-box ol {
+  margin-left: 20px;
+  padding-left: 10px;
+  color: #ddd;
+}
+
+.intro-box li {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+/* Responsive (optional) */
+@media (max-width: 600px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .intro-box {
+    padding: 20px;
+  }
+
+  .intro-box h2 {
+    font-size: 1.3rem;
+  }
+}
+
 
