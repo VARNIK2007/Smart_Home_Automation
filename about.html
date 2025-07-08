@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Smart Home Automation</title>
+  <link rel="stylesheet" href="about-style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="about-section">
+    <h1>ℹ️ About the Project</h1>
+    
+    <!-- Hardware Section -->
+    <div class="category">
+      <h2>🔧 Hardware Components</h2>
+
+      <div class="item">
+        <h3>📦 Microcontroller</h3>
+        <p><strong>ESP8266 NodeMCU</strong><br>
+        A low-cost Wi-Fi-enabled microcontroller used for IoT applications. It connects to the Blynk cloud and controls devices.</p>
+      </div>
+
+      <div class="item">
+        <h3>🧠 Sensors</h3>
+        <p><strong>DS18B20 Temperature Sensor</strong><br>
+        A digital sensor used to measure ambient temperature. It supports multiple sensors on a single wire.</p>
+        <p><strong>MQ2 Gas Sensor</strong><br>
+        Used to detect flammable gases like LPG, smoke, and methane in the environment.</p>
+      </div>
+
+      <div class="item">
+        <h3>⚡ Actuators</h3>
+        <p><strong>Relay Module (3-Channel)</strong><br>
+        Electrically operated switches to control AC appliances (like geyser, light, gas valve) from the ESP8266.</p>
+        <p><strong>Servo Motor (SG90 or MG90S)</strong><br>
+        Used to open/close the gas valve automatically based on gas levels.</p>
+      </div>
+
+      <div class="item">
+        <h3>🧰 Other Components</h3>
+        <p><strong>Push Buttons (2x)</strong><br>
+        For manual toggling of light and geyser locally.</p>
+        <p><strong>AC Bulb or Fan (Load)</strong><br>
+        Connected to the relay to simulate real appliances.</p>
+        <p><strong>Wires, Breadboard, Power Supply</strong><br>
+        For prototyping and wiring the circuit.</p>
+      </div>
+    </div>
+
+    <!-- Software Section -->
+    <div class="category">
+      <h2>💻 Software Tools</h2>
+
+      <div class="item">
+        <h3>📱 Blynk IoT App</h3>
+        <p>
+          Blynk is a powerful platform that allows you to create custom IoT dashboards. Using the Blynk mobile app, you can control devices like geysers, lights, and fans wirelessly from anywhere. It connects to the ESP8266 using the Blynk authentication token.
+        </p>
+      </div>
+
+      <div class="item">
+        <h3>🧠 Arduino IDE</h3>
+        <p>
+          Used for writing, compiling, and uploading the ESP8266 firmware. Libraries like <code>DallasTemperature</code>, <code>Servo</code>, and <code>BlynkSimpleEsp8266</code> are used for sensor and cloud integration.
+        </p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
