@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Home Automation</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>This is Website</h1>
+  <header>
+    <div class="container">
+      <h1>🏠 Smart Home Automation</h1>
+      <p>Control & Monitor Devices with ESP8266 + Web</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>💡 Control Panel</h2>
+      <button class="device-btn" id="light-toggle">Toggle Light</button>
+      <button class="device-btn" id="fan-toggle">Toggle Fan</button>
+    </section>
+
+    <section class="card">
+      <h2>🌡 Sensor Data</h2>
+      <p>Temperature: <span id="temp-value">-- °C</span></p>
+      <p>Humidity: <span id="humidity-value">-- %</span></p>
+    </section>
+
+    <section class="card">
+      <h2>📡 System Info</h2>
+      <p>Status: <span id="system-status">Online</span></p>
+      <p>Connected Device: ESP8266</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>🔌 Created by <strong>VARNIK2007</strong> | 
+      <a href="https://github.com/VARNIK2007" target="_blank">GitHub</a>
+    </p>
+  </footer>
+
+  <!-- JS for button actions -->
+  <script>
+    document.getElementById('light-toggle').onclick = () => alert("Light toggled!");
+    document.getElementById('fan-toggle').onclick = () => alert("Fan toggled!");
+  </script>
 </body>
 </html>
