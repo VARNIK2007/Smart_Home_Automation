@@ -1,0 +1,52 @@
+/* Reset and font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0d1117;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container {
+  text-align: center;
+}
+
+.title {
+  font-size: 2.8rem;
+  color: #00f7ff;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.menu-box {
+  width: 220px;
+  padding: 15px 25px;
+  background-color: #1f2937;
+  border: 2px solid #00f7ff;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #00f7ff;
+  transition: all 0.3s ease;
+}
+
+.menu-box:hover {
+  background-color: #00f7ff;
+  color: #0d1117;
+  transform: scale(1.05);
+}
