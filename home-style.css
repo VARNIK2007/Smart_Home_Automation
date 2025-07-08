@@ -5,76 +5,100 @@
   box-sizing: border-box;
 }
 
-/* Body styling */
+/* General body styling */
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: #121212;
+  color: #f0f0f0;
   line-height: 1.6;
   padding: 20px;
 }
 
-/* Main container */
-.main-container {
-  max-width: 900px;
+/* Main container for all sections */
+.about-section {
+  max-width: 1000px;
   margin: auto;
-  padding: 20px;
 }
 
 /* Title styling */
-.title {
+.about-section h1 {
   text-align: center;
-  font-size: 2.5rem;
   margin-bottom: 30px;
-  color: #2c3e50;
+  color: #00f7ff;
+  font-size: 2.5rem;
 }
 
-/* Intro box / section wrapper */
-.intro-box {
-  background-color: #ffffff;
-  padding: 25px;
+/* Category section header */
+.category {
+  margin-bottom: 40px;
+}
+
+.category h2 {
+  color: #00f7ff;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  text-align: left;
+}
+
+/* Individual content block */
+.item {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #1e1e1e;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
-/* Section headings */
-.intro-box h2 {
-  margin-top: 25px;
+/* Subheadings inside .item blocks */
+.item h3 {
+  color: #66ccff;
   margin-bottom: 10px;
-  font-size: 1.5rem;
-  color: #2c3e50;
-  text-align: left;
+  font-size: 1.4rem;
 }
 
-/* Paragraphs and list items */
-.intro-box p,
-.intro-box li {
+/* Paragraph text inside .item */
+.item p {
+  color: #ccc;
   font-size: 1rem;
-  margin-left: 0;
-  padding-left: 0;
+  margin-bottom: 15px;
   text-align: left;
-  line-height: 1.6;
-  color: #333;
 }
 
-/* Ordered list style */
-.intro-box ol {
-  padding-left: 20px;
+/* Images (optional use) */
+.about-img,
+.component-img {
+  display: block;
+  max-width: 100%;
+  margin: 15px 0;
+  border-radius: 10px;
+  border: 1px solid #444;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  object-fit: cover;
 }
 
-/* Responsive design */
+/* Smaller images for components */
+.component-img {
+  width: 180px;
+  height: auto;
+}
+
+/* Responsive styles */
 @media (max-width: 600px) {
-  .title {
+  .about-section h1 {
     font-size: 2rem;
   }
 
-  .intro-box h2 {
-    font-size: 1.3rem;
+  .category h2 {
+    font-size: 1.5rem;
   }
 
-  .intro-box p,
-  .intro-box li {
-    font-size: 0.95rem;
+  .item h3 {
+    font-size: 1.2rem;
+  }
+
+  .component-img {
+    width: 100%;
+    max-width: 300px;
   }
 }
 
